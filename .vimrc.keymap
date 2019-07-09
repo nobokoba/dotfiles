@@ -1,0 +1,62 @@
+"========================================
+" キーバインド
+"========================================
+
+" exキーの設定
+noremap ;  :
+" noremap :  ;
+
+" マーク
+nnoremap ` '
+nnoremap ' `
+
+" コマンドラインモード
+nnoremap q; q:
+nnoremap q: q;
+
+" バッファ移動
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
+
+" 素早くヘルプを引く
+nnoremap <C-h>  :<C-u>help<Space>
+nnoremap <C-h><C-h>  :<C-u>help<Space><C-r><C-w><CR>
+
+" 以下スペースPrefix
+nnoremap <Space>s. :<C-u>source $MYVIMRC<CR>
+nnoremap <Space>.  :<C-u>edit $MYVIMRC<CR>
+
+" 検索を楽ちんにする
+cnoremap <expr> / getcmdtype() == '/' ? '¥/' : '/'
+
+" 改行ハック
+"nnoremap <silent>  O :<C-u>call append(expand('.'), '')<Cr>j
+
+" レジスタ表示
+nnoremap ,r :reg<CR>
+
+"  タグジャンプ周り
+"nnoremap [Tag]   <Nop>
+"nmap     t [Tag]
+"nnoremap [Tag]t  <C-]>
+"nnoremap <silent> [Tag]n  :<C-u>tag<CR>
+"nnoremap <silent> [Tag]p  :<C-u>pop<CR>
+"nnoremap <silent> [Tag]l  :<C-u>tags<CR>
+
+" merge用
+if &diff
+    nnoremap ,1 :diffget LOCAL<CR>
+    nnoremap ,2 :diffget BASE<CR>
+    nnoremap ,3 :diffget REMOTE<CR>
+endif
+
+" very magic 検索
+nnoremap /  /\v
+
+" Emacs like
+inoremap <C-p> <Up> 
+inoremap <C-f> <Right> 
+inoremap <C-n> <Down> 
+inoremap <C-b> <Left> 

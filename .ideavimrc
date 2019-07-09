@@ -1,0 +1,6 @@
+source ~/.vimrc.keymap
+
+nnoremap / /
+
+set incsearch
+set hlsearch

@@ -1,0 +1,18 @@
+# under .config
+/.config/*
+
+## under fish
+!/.config/fish/
+/.config/fish/completions/*
+/.config/fish/functions/*
+/.config/fish/conf.d/*
+!/.config/fish/completions/fisher.fish
+!/.config/fish/functions/fisher.fish
+!/.config/fish/functions/peco_select_history.fish
+
+# ignogred files
+.DS_Store
+
+## fish env
+fishd.*
+.config/fish/fish_variables
