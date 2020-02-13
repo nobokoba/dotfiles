@@ -88,8 +88,7 @@ brew install pcre2
 brew install perl
 brew install pkg-config
 brew install pstree
-brew install python
-brew install python@2
+brew install python3
 brew install rbenv
 brew install readline
 brew install reattach-to-user-namespace
@@ -124,11 +123,11 @@ brew cask install dash
 brew cask install docker
 brew cask install google-chrome
 brew cask install intellij-idea
+brew cask install rubymine
 brew cask install kindle
 brew cask install macdown
 brew cask install querious
 brew cask install skim
-brew cask install vagrant
 brew cask install visual-studio-code
 
 brew tap argon/mas
@@ -146,23 +145,15 @@ brew install brew-file
 
 # Other Cask applications
 brew cask install alfred
-brew cask install db-browser-for-sqlite
 brew cask install fluid
 brew cask install google-japanese-ime
 brew cask install java
-brew cask install kitematic
 brew cask install paw
-brew cask install sequel-pro
-brew cask install typora
-brew cask install virtualbox
 
 # App Store applications
 mas install 417375580 BetterSnapTool (1.9)
 mas install 1024640650 CotEditor (3.7.8)
 mas install 1319778037 iStat Menus (6.31)
-mas install 462058435 Microsoft Excel (16.27)
-mas install 462062816 Microsoft PowerPoint (16.27)
-mas install 462054704 Microsoft Word (16.27)
 mas install 1289197285 MindNode (6.0.3)
 mas install 867299399 OmniFocus (2.12.4)
 mas install 1346203938 OmniFocus (3.4.1)
