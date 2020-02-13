@@ -23,6 +23,14 @@ if type gsed > /dev/null 2>&1
   blias sed gsed
 end
 
+function careful-ssh
+  echo '？！？！？！？！？！？！？！/want_to_loginで許可をとったか？？？？？？？？？ ' 
+  sleep 1
+  ssh -F ~/.ssh/config_careful $argv
+end
+
+#alias careful-ssh="confirm_want_to_login && ssh -F ~/.ssh/config_careful"
+
 # env
 set -x EDITOR vim
 eval (direnv hook fish)
